@@ -2,7 +2,9 @@
   "name": "course-directory",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://scottie-schneider.github.io/course_directory/",
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "react-scripts": "1.0.6"
   },
   "dependencies": {
@@ -11,6 +13,8 @@
     "react-router-dom": "^4.3.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
